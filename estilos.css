@@ -1,0 +1,280 @@
+*{
+	margin:0;
+    padding:0;
+    
+}
+
+body{
+    background-color: cornsilk;
+}
+
+.container{
+    width:90%;
+	max-width:1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    height: 100px;
+    margin-top: 20px;
+    background-color: gray;
+}
+
+header .logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav ul{
+    list-style:none;
+    display: flex;
+    width: calc(70% - 90px);
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;    
+}
+
+header nav ul li{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a{
+	padding: 10px 20px;
+	color:#fff;
+	text-decoration:none;
+}
+
+header nav ul li :hover{
+	background:#6BA5E8;
+}
+
+main .show{
+    width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+main .show img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+
+#apresentaçao{
+    display: flex;
+    height: auto;
+    margin-bottom:20px ;
+}
+
+.show{
+    display: flex;
+    gap: 1rem;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* perfil */
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    
+}
+
+.myphotho{
+    width: 30%; 
+    min-height: 150px;
+    position: relative;
+}
+
+.myphotho .perfil{
+    position: absolute;
+    top: -100px;
+}
+
+.social article{
+    width: 50%;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.perfil {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* o flex-end*/
+}
+
+.perfil img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.redes {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.redes .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.facebook {
+    background-color: #3b5998 ;
+}
+
+.instagram {
+    background-color: #C13584 ;
+}
+
+.twitter {
+    background-color: #00acee ;
+}
+/* formaçao */
+
+#formaçao{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-right: 180px; 
+    background-color: lightblue;  
+}
+
+#formaçao ul{
+    margin:50px, 180px;
+    margin: auto;
+    line-height: 50px; 
+}
+/* ignore massage */
+#experiencia{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-right: 200px;
+    background-color: rgb(221, 235, 240);
+}
+
+#experiencia ul{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 45px;
+    line-height: 50px;
+}
+
+/* .future{
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+}  */
+
+#projeto .future{
+    display: flex;
+    justify-content: center;
+    margin: 10px, 250px;
+}
+ #projeto h2{
+     text-align: center;
+     margin: 10px;
+     font-size: 50px;
+    
+ }
+
+.objetivos{
+    width: 250px;
+    padding: 20px;
+}
+
+.objetivos img{
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+ #contato{
+    display: flex;
+    background-color: rgb(191, 191, 226);
+}
+
+.form{
+    margin: auto;
+} 
+
+.comentario{
+    margin: auto;
+}
+
+@media (max-width: 768px) {    
+    header .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    header nav, header nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;     
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    .myphotho {
+        width: 100%;
+    }
+
+    #apresentaçao article {
+        width: 100%;
+    }
+
+
+    #experiencia{
+        width: 100%;
+    }
+
+    #experiencia ul{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin: 0%;
+    }
+
+    }
+    .future{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .objetivos{
+        width: 100%;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    
+     #contato{
+        display: flex;
+        flex-direction: column;  
+    } 
